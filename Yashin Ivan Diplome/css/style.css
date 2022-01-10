@@ -1,0 +1,777 @@
+body {
+font-style: normal;
+background-color: #F9FDFF;
+overflow-x: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1170px; 
+}
+
+h1,h2,h3,h4, p {
+margin: 0;
+}
+
+/* начало header-menu раздел навигации(header-menu)---------------------------------------------------------------------------------------- */
+.header {
+position: relative;
+}
+
+.header::before {
+content: '';
+position: absolute;
+background: #FAECE9;
+width: 33%;
+height: 754px;
+right: 0px;
+top: -2px;
+z-index: -2;
+}
+
+.header-wrapper {
+position: relative;
+width: 103%;
+}
+
+.store-header {
+display: flex;
+align-items: center;
+justify-content:space-between;
+font-family: 'Open Sans', sans-serif;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.13em;
+text-transform: uppercase;
+color: #303032;
+padding-top: 85px;
+position: absolute;
+width: 100%;
+z-index: 4;
+}
+
+.store-header a {
+text-decoration: none;
+}
+
+.store-header a:visited {
+color: #303032;
+}
+
+.store-header a:nth-child(2) {
+margin-left: 60px;
+margin-right: 63px;
+}
+
+.navigation {
+margin-left: 138.63px;
+}
+
+.store-header-left_block {
+display: flex;
+align-items: center;
+}
+
+.store-header-right_block {
+z-index: 1;
+}
+
+.store-header-right_item {
+cursor: pointer;
+background-color: transparent;
+border: none;
+}
+.store-header-right_item:nth-child(1) {
+    padding: 0;
+}
+.store-header-right_item:nth-child(2) {
+margin-left: 22px;
+padding: 0;
+}
+.header_burger {
+    display: none;
+}
+
+
+/* конец header-menu раздел навигации-------------------------------------------------------------------------------------------- */
+
+/* Начало верстки  первого блока со слайдером навигации(slick-slider-first)---------------------------------------------------------------- */
+.wrapper {
+position: relative;
+display: flex;
+margin-bottom: 120px;
+}
+
+.slick-vertical .slick-slide {
+display: flex;
+align-items:flex-start;
+}
+
+.header-description .slick-list {
+overflow: hidden;
+height: 870.391px ;
+}
+
+.header-description .slick-dots {
+position: absolute;
+width: 59px;
+bottom: auto;
+top: 50%;
+right: 25px;
+transform: translateY(-50%);
+line-height: 45px;
+text-align: start;
+margin-top: -26px;
+}
+
+.header-description .slick-dots li button {
+font-family: "Playfair Display", sans-serif;
+font-size:30px;
+text-align: center;
+opacity: 0.5;
+}
+
+.header-description .slick-dots button {
+border: none;
+outline: none;
+background: transparent;
+color: #0000004C;
+font-family: "Playfair Display", sans-serif;
+font-size: 30px;
+font-weight: 400;
+line-height: 29px;
+cursor: pointer;
+}
+
+.header-description .slick-dots button::before {
+content: '0';
+font-family: "Playfair Display", sans-serif;
+font-size: 30px;
+line-height: 20px;
+text-align: center;
+position: relative;
+
+}
+
+.header-description .slick-dots li button:focus::before {
+font-family: "Playfair Display", sans-serif;
+font-size:40px;
+line-height: 20px;
+text-align: center;
+opacity: 1;
+color: black;
+}
+
+.header-description .slick-dots li button:focus::after {
+content: '';
+border-right: 2px solid #000000;
+height: 40px;
+padding-right: 20px;
+}
+
+.header-description .slick-active button:focus {
+position: relative;
+color: #000;
+opacity: 1;
+font-size: 40px;
+font-weight: 400;
+line-height: 58px;
+}
+
+.header-description .slick-dots li {
+position: relative;
+display: inline-block;
+width: 20px;
+height: 20px;
+margin: 20px 5px;
+padding: 0;
+cursor: pointer;
+}
+
+.armchair-box .armchairimg {
+box-shadow: 300px 0px 0px 0px #fceae8;    
+}
+
+
+.description {
+width: 545px;
+box-sizing: border-box;
+padding-top: 235px;
+}
+
+.description_header {
+font-family: 'Playfair Display', sans-serif;
+font-weight: bold;
+font-size: 57px;
+line-height: 145%;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: #303032;
+margin-bottom: 35px;
+}
+
+.description_title, .description_price {
+font-family: 'Open Sans', sans-serif;
+font-weight: normal;
+font-size: 20px;
+line-height: 27px;
+color: #303032;
+}
+.description_title {
+margin-bottom: 10px;
+}
+
+.description_price:nth-of-type(2) {
+font-weight: 600;
+font-size: 30px;
+line-height: 41px;
+margin-left: 22px;
+}
+
+.description_buy {
+display: block;
+padding: 18px 82px 18px 80px;
+background: #303032;
+font-family: 'Open Sans', sans-serif;
+font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+letter-spacing: 0.13em;
+text-transform: uppercase;
+color: #FFFFFF;
+cursor: pointer;
+margin-top: 35px;
+border: none;
+box-sizing: border-box;
+width: 238px;
+text-decoration: none;
+}
+
+/* Конец первого блока и слайдера-------------------------------------------------------------------------------------------- */
+
+/* начало второй секции карточки товаров-(productcards)---------------------------------------------------------------------------------------- */
+
+.productcards {
+display: flex;
+justify-content: space-between;
+}
+.productcards_left {
+width: 570px;
+    
+}
+
+.productcards_itemtop {
+display: flex;
+justify-content: space-between;
+align-items:center;
+margin-bottom: 37px;
+flex-wrap: wrap;
+
+}
+
+.productcards_itemtop_left {
+min-width: 270px;
+}
+
+.productcards_itemtop_left_title{
+font-family: 'Playfair Display', sans-serif;
+font-weight: bold;
+font-size: 28px;
+line-height: 37px;
+letter-spacing: 0.05em;
+color: #303032;
+margin-bottom: 7px;
+text-decoration: none;
+}
+.productcards_itemtop_right:hover,.productcards_itembottom_left:hover, .productcards_itembottom_right:hover, .productcards_right:hover  {
+box-shadow: 0 0 15px rgba(0,0,0,0.6);
+cursor: pointer;
+
+}
+.productcards_itemtop_right {
+background: #FFFFFF;
+box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.03);
+padding: 20px 42px 16px 45px;
+text-align: center;
+}
+
+.productcards_itemtop_right_picture {
+margin-bottom: 10px;
+}
+
+.cardtitle {
+font-family: 'Open Sans', sans-serif;
+font-weight: normal;
+font-size: 20px;
+line-height: 27px; 
+color: #303032;
+margin-bottom: 7px;
+}
+.cardprice {
+font-family: 'Open Sans', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 38px;
+color: #303032;
+}
+
+.productcards_itembottom {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.productcards_itembottom_left {
+
+box-sizing: border-box;
+padding: 1px 32px 16px 36px;
+background: #FFFFFF;
+box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.03);
+text-align: center;  
+position: relative;
+display: grid;  
+}
+
+.productcards_itembottom_left_picture {
+margin-bottom: 7px;
+}
+
+.productcards_itembottom_right_title  {
+position: absolute;
+bottom: 55px;
+left: 67px;
+}
+
+.productcards_itembottom_right {
+text-align: center;
+background: #FFFFFF;
+}
+
+.productcards_right {
+display: flex;
+flex-direction: column;
+box-sizing:border-box;
+padding: 19px 37px 26px 43px;
+text-align: center;
+background: #FFFFFF;
+box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.03);
+}
+
+.productcards_right_picture {
+margin-bottom: 29px;
+}
+
+.secondblock {
+margin-bottom: 102px;
+}
+/* конец второй секции-------------------------------------------------------------------------------------------- */
+
+/* начало третьей секции меню отзывов----(slick-slider-reviews)-------------------------------------------------------------------------- */
+.slider-box{
+text-align: center;
+width: 653px;
+margin: 0 auto;
+}
+
+.slider-box_face {
+margin-bottom: 25px;
+}
+
+.slider-box_header {
+font-family: 'Open Sans', sans-serif;
+font-weight: bold;
+font-size: 18px;
+line-height: 154.36%;
+color: #444348;
+}
+
+.slider-box_subtitle {
+font-family: 'Avenir Next Cyr';
+font-weight: normal;
+font-size: 16px;
+line-height: 24.7px;
+text-align: center;
+color: #444348;
+}
+
+.slider-box_title {
+font-family: 'Open Sans', sans-serif;
+font-style: italic;
+font-weight: normal;
+font-size: 16px;
+line-height: 154.36%;
+text-align: center ;
+color: #444348;
+margin-top: 20px;
+width: 653px !important;
+}
+
+/* slider - переопределение стилей*/
+.slider-box.slick-slide {
+display: flex;
+flex-direction: column;
+align-items:center;
+}
+
+.slide-wrapper .slick-dots {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 22px 0 0 0px;
+padding: 0;
+}
+
+.slide-wrapper .slick-dots li button:before {
+    content: '';
+}
+
+.slide-wrapper .slick-dots li button {font-size: 0;
+width: 8px;
+height: 8px;
+background-color: #ffff;
+border: 1px solid #B3B3B3;
+border-radius: 50%;
+}
+
+.slide-wrapper .slick-dots li {
+margin: 0 3px;
+width: 14px;
+height: 14px;
+}
+
+.slide-wrapper li.slick-active button {
+background-color: #B3B3B3;
+}
+
+.slide-wrapper .slick-next {
+padding-bottom: 4px;
+right: 180px;
+}
+
+.slide-wrapper .slick-prev {
+padding-bottom: 4px;
+left: 193px;
+}
+
+.slide-wrapper .slick-next:before {
+content: url("../img/main/sectionthreeslider/right.svg");
+}
+
+.slide-wrapper .slick-prev:before {
+content: url("../img/main/sectionthreeslider/left.svg");
+ 
+}
+
+.slide-wrapper .slick-arrow {
+font-size: 0;
+border: none;
+position: absolute;
+background-color: #ffffff;
+width: 36px;
+height: 36px;
+border-radius: 50%;
+box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+z-index: 1;
+top: 50%;
+margin-top: -18px;
+}
+
+.third-block {
+margin-bottom: 203px;  
+}
+/* конец третьей секции блока отзывов-------------------------------------------------------------------------------------------- */
+
+
+/* начало четвертого блока слайдер+ карточки товаров---------(slick-slider-last chance)------------------------------------------- */
+.furnituresail_header {
+font-family: 'Playfair Display';
+font-weight: bold;
+font-size: 28px;
+line-height: 37px;
+letter-spacing: 0.05em;
+color: #303032;
+margin-bottom: 6px;
+}
+
+.slick-slide img {
+display: inline;
+}
+
+.navigation-menu {
+margin-top: 37px;
+margin-bottom: 25px;
+}
+
+.navigation-menu a {
+font-family: 'Open Sans', sans-serif;
+font-weight: 600;
+font-size: 16px;
+line-height: 25px;
+text-align: center;
+color: rgba(0, 0, 0, 0.4);
+text-decoration: none;
+}
+
+.navigation-menu a:nth-child(2) {
+margin-left: 48px;
+margin-right: 49px;
+}
+
+.navigation-menu a:active:hover {
+text-decoration-line: underline;
+color: #000000;
+}
+
+.navigation-menu a:visited {
+text-decoration: underline;
+color:black;
+}
+
+.furnituresail-box {
+display: flex;
+justify-content: space-between;
+align-items:flex-start
+}
+
+.furnituresail-box_item {
+font-family: 'Open Sans', sans-serif;
+font-style: normal;
+width: 209px;
+height: 355px;
+justify-content: flex-end;
+align-items: flex-end;
+display: flex;
+flex-direction: column;
+position: relative;
+overflow: hidden !important;
+}
+
+.furnituresail-box_item::before {
+content: '';
+display: none;
+position: absolute;
+width: 100%;
+height: 5px;
+left: 0;
+top: 0;
+background: #303032;
+}
+
+.furnituresail-box_item:hover::before {
+display: block;
+}
+
+.furnituresail-box_item a {
+
+display: none;
+position: absolute;
+padding: 18px 0;
+color: #FFFFFF;
+outline: none;
+background: #303032;
+font-size: 16px;
+font-weight: 400;
+line-height: 21.79px;
+width: 100%;
+text-align: center;
+letter-spacing: 0.13em;
+text-transform: uppercase;
+bottom: -52px;
+text-decoration: none; 
+}
+
+.furnituresail-box_item:hover a {
+display:block;  
+height: 70px; /* слик слайдер обрезает ховер эффект помогло увеличить высоту ссылки*/
+}
+
+.furnituresail-box_item:nth-child(n){
+background: #FFFFFF;
+box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+}
+
+.furnituresail-box_title {
+font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+color: #000000;
+width: 90%;
+}
+
+.cloud, .owl,.caramel, .maya, .Messi  {
+display: flex; 
+flex-wrap: wrap;
+}
+
+.title_margin, .price_margin {
+margin-left: 26px;
+}
+
+.caramel {
+margin-left: 23px;
+margin-bottom: 14px;
+}
+
+.owl {
+margin-bottom: 10px;
+}
+
+.maya {
+margin-left: 26px;
+}
+
+.item_maya {
+position: relative;
+}
+
+.maya {
+position: absolute;
+top:37px;
+}
+
+.Messi {
+margin-bottom: 3px;
+margin-left: 18px;
+}
+
+.furnituresail-box_price {
+font-weight: 600;
+font-size: 28px;
+line-height: 38px;
+color: #303032;
+margin-right: 11px;
+}
+
+.furnituresail-sail {
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+text-decoration-line: line-through;
+color: #979798;
+margin-top: 10px
+}
+
+.fourblock {
+position: relative;
+}
+
+.fourblock::before {
+content: '';
+position: absolute;
+background: #FAECE9;
+width: 54%;
+height: 545px;
+left: 0px;
+top: -73px;
+z-index: -2;
+}
+
+/*3тий слайдер*/
+
+.furnituresail-box.slick-initialized .slick-slide {
+display: flex;
+align-items: flex-end;
+ margin-right: 32px;
+}
+
+/* Конец четвертого блока-------------------------------------------------------------------------------------------- */
+
+
+
+/*footer-menu --------------------------------------------------------------------------------------------------------*/
+
+.footer {
+ padding-top: 100px;
+background-color: inherit;
+font-style: normal;
+}
+.footer-menu {
+display: flex;
+justify-content:space-between ;
+margin-bottom: 30px;
+flex-wrap: wrap;
+}
+
+.footer-menu_item {
+display: flex;
+flex-wrap: wrap;
+}
+
+
+.footer-menu_item a {
+text-decoration: none;
+margin-left: 60px;
+font-family: 'Avenir Next Cyr';
+font-weight: 600;
+font-size: 14px;
+line-height: 22px;
+letter-spacing: 0.05em;
+color: #303032;
+}
+
+.footer-contacts {
+display: flex;
+align-items:center;
+margin-bottom: 30px;
+flex-wrap: wrap;
+}
+
+.footer-contacts_item-left,.footer-contacts_item-right {
+display: flex;
+align-items:center;
+}
+
+.footer-contacts_picturephone {
+margin-right: 7px;
+}
+
+.footer-contacts_picturemail{
+margin-right: 8px;
+margin-left: 51px;
+}
+
+.footer-contacts_mail, .footer-contacts_phone {
+font-family: 'Roboto', sans-serif;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+color: #303032;
+text-decoration: none;
+cursor: pointer;
+}
+
+.footer-about {
+border-top: 1px solid rgba(0, 0, 0, 0.2);
+transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.footer-about_item {
+text-align: right;
+padding: 10px 0;
+font-family: 'Avenir Next Cyr', sans-serif;
+font-weight: normal;
+font-size: 9.5px;
+line-height: 15px;
+color: #000000;
+opacity: 0.2;
+}
+
+.footer-menu_item_left, .footer-menu_item_right {
+display: flex;
+align-items:flex-start;
+}
+
+.footer-menu_item_left {
+margin-bottom: 20px;
+}
+
+.footer-menu_logo{
+display: inline;
+}
+
+.double {
+display: none;
+}
+/* Конец footer menu-------------------------------------------------------------------------------------------- */
